@@ -1,15 +1,15 @@
-package stack_implementation;
+package stack_implementations;
 
 /*
  * Stack Implementation using Arrays
 */
 
-public class MyStack {
+public class StackUsingArrays {
 	int a[];
 	int top;
 	int capacity;
 
-	public MyStack(int size) {
+	public StackUsingArrays(int size) {
 		this.capacity = size;
 		top = -1;
 		a = new int[capacity];

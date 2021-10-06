@@ -1,4 +1,4 @@
-package stack_implementation;
+package stack_implementations;
 
 import java.util.Stack;
 
