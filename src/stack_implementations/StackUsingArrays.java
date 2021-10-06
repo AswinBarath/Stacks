@@ -5,14 +5,14 @@ package stack_implementations;
 */
 
 public class StackUsingArrays {
-	int a[];
+	int stack[];
 	int top;
 	int capacity;
 
 	public StackUsingArrays(int size) {
 		this.capacity = size;
 		top = -1;
-		a = new int[capacity];
+		stack = new int[capacity];
 	}
 
 	public void push(int data) throws Exception {
@@ -20,14 +20,14 @@ public class StackUsingArrays {
 			throw new Exception("Stack Overflow");
 		}
 		top++;
-		a[top] = data;
+		stack[top] = data;
 	}
 
 	public int pop() throws Exception {
 		if (top == -1) {
 			throw new Exception("Stack Underflow");
 		}
-		int temp = a[top];
+		int temp = stack[top];
 		top--;
 		return temp;
 	}
@@ -36,7 +36,7 @@ public class StackUsingArrays {
 		if (top == -1) {
 			throw new Exception("Stack Underflow");
 		}
-		return a[top];
+		return stack[top];
 	}
 
 	boolean isEmpty() {
