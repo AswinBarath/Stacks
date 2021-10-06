@@ -2,11 +2,13 @@ package stack_problems;
 
 import java.util.Stack;
 
+// Problem Link: https://leetcode.com/problems/next-greater-element-ii/
+
 public class NextGreaterElement {
 
 	public static void main(String[] args) {
 
-		int[] arr = { 7, 2, 3, 5 };
+		int[] arr = { 1, 2, 3, 4, 3 };
 		int[] ans = nextGreaterElement(arr);
 		for (int i : ans) {
 			System.out.println(i);
@@ -15,6 +17,8 @@ public class NextGreaterElement {
 	}
 
 	public static int[] nextGreaterElement(int[] arr) {
+		// Time Complexity: O(N)
+		// Space Complexity: O(N)
 		int n = arr.length;
 		int[] nge = new int[n];
 		Stack<Integer> stack = new Stack<>();
